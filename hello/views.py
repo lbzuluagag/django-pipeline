@@ -5,4 +5,4 @@ from django.http import JsonResponse
 
 
 def index(request):
-    return JsonResponse({'string':' this is string'})
+    return JsonResponse({'string':' this is string hello'})

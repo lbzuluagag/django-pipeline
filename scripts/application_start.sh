@@ -1,5 +1,9 @@
 #!/bin/bash
 
+isExistApp = `pgrep httpd`
+if [[ -n  $isExistApp ]]; then
+    service httpd stop
+fi
 #give permission for everything in the express-app directory
 sudo chmod -R 777 /home/ec2-user/express-app
 

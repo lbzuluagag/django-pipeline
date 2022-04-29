@@ -39,3 +39,9 @@ cache:
     - '/var/lib/apt/lists/**/*'
     - '/etc/apt/sources.list.d/mysql.list'
     - '/etc/apt/sources.list'
+
+eb_codebuild_settings:
+  CodeBuildServiceRole: luis
+  ComputeType: size
+  Image: image
+  Timeout: minutes  

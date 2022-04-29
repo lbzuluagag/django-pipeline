@@ -2,9 +2,8 @@
 cd /tmp/
 
 isExistApp = `pgrep httpd`
-if [[ -n  $isExistApp ]]; then
-    service httpd stop
-fi
+
+pkill node
 
 yum remove -y httpd
 
